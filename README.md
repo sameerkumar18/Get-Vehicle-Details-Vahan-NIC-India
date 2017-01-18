@@ -1,6 +1,7 @@
 # Get-Vehicle-Details-Vahan-NIC-India
-Vehicle Registration Details scraped from https://vahan.nic.in
+Vehicle Registration Details from Vahan by Government of India. Data from the different State Registers situated at State Data Centers flow to the National Register.
 
+Get to know the vehicle details just by entering the vehicle number(see code)
 
 
 ================
@@ -17,7 +18,6 @@ Check out the latest development version anonymously with::
 
 To install libraries, run::
 
-	$ pip install requests  
  	$ pip install selenium 
 
 -------
