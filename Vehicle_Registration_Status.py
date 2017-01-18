@@ -3,6 +3,11 @@ from selenium.webdriver.common.keys import Keys
 #from sys import argv
 
 def main():
+
+    v1 = '__First-Six-alphanumeric-elements-of-number-plate__'
+    v2 = '__Last-4-numeric-elements-of-number-plate__'
+    
+    
     url = 'https://vahan.nic.in/nrservices/faces/user/jsp/SearchStatus.jsp'
     chrome_options = webdriver.ChromeOptions()
     prefs = {"profile.default_content_setting_values.notifications" : 2}
@@ -11,9 +16,6 @@ def main():
     driver.get(url)
 
     assert "National" in driver.title
-
-    v1 = '__First-Six-alphanumeric-elements-of-number-plate'
-    v2 = '__Last-4-numeric-elements-of-number-plate'
 
 
     Vehicle_1 = driver.find_element_by_id('vehiclesearchstatus:regn_no1_exact')
